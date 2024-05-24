@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
-import { FaAngleLeft } from "react-icons/fa";
+import { TfiAngleLeft } from "react-icons/tfi";
 import { Link } from "react-router-dom";
 import { IoPersonOutline } from "react-icons/io5";
 import { GoMail } from "react-icons/go";
@@ -53,7 +53,7 @@ const Signup = () => {
                 <div className="MainButton  topleft">
                   <Button type="btn" variant="Secondary">
                     <span className="mx-2 spanButton">
-                      <FaAngleLeft
+                      <TfiAngleLeft
                         className="mx-2"
                         style={{ fontSize: "25px" }}
                       />
