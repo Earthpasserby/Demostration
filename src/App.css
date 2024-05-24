@@ -8,8 +8,6 @@
   height: 82px;
   left: 163px;
 }
-.sec-Img {
-}
 
 h1 {
   font-family: "Zen Kaku Gothic Antique";
@@ -34,50 +32,60 @@ p {
   height: 61px;
   gap: 0px;
   opacity: 0px;
-text-align: center;
-
+  text-align: center;
 }
-.Col-1{
+.Col-1 {
   padding: 0 !important;
 }
 .topleft {
   color: #000000;
-  
 }
-span{
+span {
   width: 74px;
-height: 23px;
-top: 36px;
-left: 519px;
-gap: 0px;
-opacity: 0px;
-font-family: "Zen Kaku Gothic Antique";
-font-size: 12.8px;
-font-weight: 400;
-line-height: 22.53px;
-text-align: center;
-color: #424242;
-
-
+  height: 23px;
+  top: 36px;
+  left: 519px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 12.8px;
+  font-weight: 400;
+  line-height: 22.53px;
+  text-align: center;
+  color: #424242;
 }
 
 .moved-image {
-  transform: translateY(-150px); /* Move the image upward */
+  transform: translateY(-150px);
 }
 .text {
-  transform: translateY(-270px); /* Move the text upward */
+  transform: translateY(-270px);
 }
 .input-container {
   position: relative;
-  width: 300px; /* Adjust as needed */
+  width: 420px;
+  height: 72px;
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
 }
 
 .input-field {
-  width: 100%;
-  padding: 10px 10px 10px 40px; /* Add left padding to make room for the icon */
-  border: 1px solid #ccc;
+  padding: 10px 10px 10px 40px;
+  border: 1px solid "#757575";
   border-radius: 4px;
   box-sizing: border-box;
+  width: 420px;
+  height: 72px;
+  gap: 0px;
+  opacity: 0px;
+  background: #ffffff;
+  color: #424242;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.16px;
+  text-align: left;
 }
 
 .input-icon {
@@ -85,5 +93,29 @@ color: #424242;
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  color: #aaa; /* Adjust icon color */
+  color: #aaa;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+span p {
+  position: absolute;
+  right: -100px;
+  top: 60%;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 20px;
+  margin-left: 5px;
+}
+.icon {
+  margin-left: 180px;
+}
+
+.bt1 {
+  width: 420px;
+  height: 72px;
+  top: 270px;
+  gap: 0px;
+  opacity: 0px;
+  background: #24243e;
 }

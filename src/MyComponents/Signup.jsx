@@ -3,8 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import { FaAngleLeft } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FaEnvelope } from "react-icons/fa";
+import { IoPersonOutline } from "react-icons/io5";
+import { GoMail } from "react-icons/go";
+import { GoLock } from "react-icons/go";
+import { FaArrowRight } from "react-icons/fa6";
+import { TiInfoLarge } from "react-icons/ti";
 
 const signup = () => {
   return (
@@ -63,21 +66,66 @@ const signup = () => {
                 <Link style={{ color: "black" }}>LOG IN NOW</Link>
               </p>
             </div>
-            <div className=" d-flex align-align-items-center justify-content-center">
+            <div className="mt-5 d-flex align-align-items-center justify-content-center">
               <div>
                 <h2>BECOME AN EXCLUSIVE MEMBERS</h2>
-                <p>SIGN UP and join the partnership</p>
+                <p className="mx-5">SIGN UP and join the partnership</p>
               </div>
             </div>
 
-            <div className="input-icons">
-              <FaEnvelope className="env" />
-              <input
-                type="text"
-                className="input-field"
-                name="email"
-                placeholder="Your email : "
-              />
+            <div className=" d-flex align-align-items-center justify-content-center">
+              <div>
+                <div className="input-container">
+                  <IoPersonOutline className="input-icon" />
+                  <input
+                    type="text"
+                    className="input-field"
+                    name="email"
+                    placeholder="Johnson Doe "
+                  />
+                </div>
+                <div className="input-container mt-4">
+                  <GoMail className="input-icon" />
+                  <input
+                    type="text"
+                    className="input-field"
+                    name="email"
+                    placeholder="example@email.com "
+                  />
+                </div>
+                <div className="input-container mt-4">
+                  <GoLock className="input-icon" />
+                  <input
+                    type="text"
+                    className="input-field"
+                    name="password"
+                    placeholder="********** "
+                  />
+                  <span>
+                    <p>show</p>
+                  </span>
+                </div>
+                <div className="d-grid mt-4">
+                  <Button
+                    size="lg"
+                    className="bt1"
+                    style={{ background: "#24243E" }}
+                  >
+                    Become a Member
+                    <FaArrowRight className="icon" />
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            <div style={{ marginTop: "130px" }}>
+              <div className="d-flex justify-content-between">
+                <p>Copyright 2021 - 2022 FoxHub All rights Reserved</p>
+                <p className="p-2">
+                  <TiInfoLarge />
+                  Need help?
+                </p>
+              </div>
             </div>
           </Col>
         </Row>
