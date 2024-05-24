@@ -108,7 +108,7 @@ const signup = () => {
                 <div className="d-grid mt-4">
                   <Button
                     size="lg"
-                    className="bt1"
+                    className="bt1 "
                     style={{ background: "#24243E" }}
                   >
                     Become a Member

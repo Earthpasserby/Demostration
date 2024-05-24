@@ -118,4 +118,5 @@ span p {
   gap: 0px;
   opacity: 0px;
   background: #24243e;
+  border-radius: 0 !important;
 }
