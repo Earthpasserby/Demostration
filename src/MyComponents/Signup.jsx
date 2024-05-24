@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import { FaAngleLeft } from "react-icons/fa";
@@ -10,19 +10,20 @@ import { FaArrowRight } from "react-icons/fa";
 import { TiInfoLarge } from "react-icons/ti";
 
 const Signup = () => {
+  const gradientStyle = {
+    background: "linear-gradient(to top,#11111a, #24243e)",
+  };
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const toggleShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
     <>
       <Container fluid>
         <Row>
-          <Col
-            className="Col-1"
-            md={4}
-            style={{
-              backgroundColor: "#24243E",
-              height: "800px",
-              width: "470.89px",
-            }}
-          >
+          <Col className="Col-1" md={4} style={gradientStyle}>
             <div className="first-Img">
               <Image src="/./star.png" />
             </div>
@@ -95,13 +96,18 @@ const Signup = () => {
                 <div className="input-container mt-4">
                   <GoLock className="input-icon" />
                   <input
-                    type="password"
+                    type={showPassword ? "text" : "password"}
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                     className="input-field"
                     name="password"
                     placeholder="**********"
                   />
-                  <span>
-                    <p>show</p>
+                  <span
+                    onClick={toggleShowPassword}
+                    className="show-Visibility"
+                  >
+                    {showPassword ? "HIDE" : "SHOW"}
                   </span>
                 </div>
                 <div className="d-grid mt-4">

@@ -6,7 +6,6 @@
 body {
   overflow: hidden;
 }
-
 .first-Img {
   display: flex;
   justify-content: center;
@@ -99,6 +98,15 @@ span {
   margin-left: 5px;
 }
 
+.show-Visibility {
+  position: absolute;
+  left: 300px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 15px;
+  margin-left: 5px;
+}
 span p {
   position: absolute;
   right: -100px;
