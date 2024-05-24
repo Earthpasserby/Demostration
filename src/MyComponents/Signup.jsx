@@ -48,33 +48,28 @@ const Signup = () => {
             </div>
           </Col>
           <Col md={8}>
-            <div className="d-flex justify-content-between Return-home">
+            <div className="d-flex justify-content-between Return-home mt-3">
               <Link to="/" style={{ textDecoration: "none" }}>
                 <div className="MainButton  topleft">
                   <Button type="btn" variant="Secondary">
-                    <span className="mx-2 spanButton">
-                      <TfiAngleLeft
-                        className="mx-2"
-                        style={{ fontSize: "25px" }}
-                      />
-                      Return Home
-                    </span>
+                    <TfiAngleLeft style={{ fontSize: "25px" }} />
+                    <span className="spanButton">Return Home</span>
                   </Button>
                 </div>
               </Link>
-              <p className="p-2">
+              <p className="Member">
                 Already a Member?
-                <Link style={{ color: "black" }}> LOG IN NOW</Link>
+                <span>
+                  <Link style={{ color: "black" }}> LOG IN NOW</Link>
+                </span>
               </p>
-            </div>
-            <div className="mt-5 d-flex align-items-center justify-content-center H-text">
-              <div>
-                <h2 className="H-Text">BECOME AN EXCLUSIVE MEMBER</h2>
-                <p className="mx-5">SIGN UP and join the partnership</p>
-              </div>
             </div>
             <div className="d-flex align-items-center justify-content-center">
               <div>
+                <div>
+                  <h2 className="H-Text">BECOME AN EXCLUSIVE MEMBER</h2>
+                  <p>SIGN UP AND JOIN THE PARTNERSHIP</p>
+                </div>
                 <div className="input-container">
                   <IoPersonOutline className="input-icon" />
                   <input
@@ -85,7 +80,7 @@ const Signup = () => {
                   />
                 </div>
                 <div className="input-container mt-4">
-                  <GoMail className="input-icon" />
+                  <GoMail className="input-icon mt-1" />
                   <input
                     type="email"
                     className="input-field"
@@ -122,13 +117,15 @@ const Signup = () => {
                 </div>
               </div>
             </div>
-            <div style={{ marginTop: "130px" }}>
-              <div className="d-flex justify-content-between">
-                <p>Copyright 2021 - 2022 FoxHub All rights Reserved</p>
-                <p className="p-2">
+            <div style={{ marginTop: "120px" }}>
+              <div className=" d-flex justify-content-between">
+                <div className="copy-lite">
+                  <span>Copyright 2021 - 2022 FoxHub All rights Reserved</span>
+                </div>
+                <div className="Help" >
                   <TiInfoLarge />
-                  Need help?
-                </p>
+                  <span >Need help?</span>
+                </div>
               </div>
             </div>
           </Col>
