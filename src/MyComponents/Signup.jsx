@@ -52,7 +52,7 @@ const Signup = () => {
               </div>
             </div>
           </Col>
-          <Col md={8}>
+          <Col md={8} style={{ backgroundColor: "#F9F9FA" }}>
             <div className="d-flex justify-content-between Return-home">
               <Link to="/" style={{ textDecoration: "none" }}>
                 <div className="topleft">
