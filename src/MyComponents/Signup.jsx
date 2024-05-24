@@ -1,15 +1,15 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
-import { FaAngleLeft } from "react-icons/fa6";
+import { FaAngleLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { IoPersonOutline } from "react-icons/io5";
 import { GoMail } from "react-icons/go";
 import { GoLock } from "react-icons/go";
-import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa";
 import { TiInfoLarge } from "react-icons/ti";
 
-const signup = () => {
+const Signup = () => {
   return (
     <>
       <Container fluid>
@@ -33,12 +33,12 @@ const signup = () => {
                 style={{ height: "708.63px", width: "1259.78px" }}
               />
             </div>
-            <div className="text d-flex align-align-items-center justify-content-center">
+            <div className="text d-flex align-items-center justify-content-center">
               <div>
                 <h1 style={{ color: "#ffffff" }}>
                   Partnership for Business Growth
                 </h1>
-                <p>
+                <p style={{ color: "#ffffff" }}>
                   Partnerships are pivotal for business growth, enabling
                   companies to leverage mutual strengths, share risks, and
                   capitalize on opportunities.
@@ -49,8 +49,8 @@ const signup = () => {
           <Col md={8}>
             <div className="d-flex justify-content-between">
               <Link to="/" style={{ textDecoration: "none" }}>
-                <div className="MainButton  topleft">
-                  <Button type="btn" variant="Secondary">
+                <div className="MainButton topleft">
+                  <Button type="btn" variant="secondary">
                     <span className="mx-2 spanButton">
                       <FaAngleLeft
                         className="mx-2"
@@ -63,43 +63,42 @@ const signup = () => {
               </Link>
               <p className="p-2">
                 Already a Member?
-                <Link style={{ color: "black" }}>LOG IN NOW</Link>
+                <Link style={{ color: "black" }}> LOG IN NOW</Link>
               </p>
             </div>
-            <div className="mt-5 d-flex align-align-items-center justify-content-center">
+            <div className="mt-5 d-flex align-items-center justify-content-center">
               <div>
-                <h2>BECOME AN EXCLUSIVE MEMBERS</h2>
+                <h2>BECOME AN EXCLUSIVE MEMBER</h2>
                 <p className="mx-5">SIGN UP and join the partnership</p>
               </div>
             </div>
-
-            <div className=" d-flex align-align-items-center justify-content-center">
+            <div className="d-flex align-items-center justify-content-center">
               <div>
                 <div className="input-container">
                   <IoPersonOutline className="input-icon" />
                   <input
                     type="text"
                     className="input-field"
-                    name="email"
-                    placeholder="Johnson Doe "
+                    name="name"
+                    placeholder="Johnson Doe"
                   />
                 </div>
                 <div className="input-container mt-4">
                   <GoMail className="input-icon" />
                   <input
-                    type="text"
+                    type="email"
                     className="input-field"
                     name="email"
-                    placeholder="example@email.com "
+                    placeholder="example@email.com"
                   />
                 </div>
                 <div className="input-container mt-4">
                   <GoLock className="input-icon" />
                   <input
-                    type="text"
+                    type="password"
                     className="input-field"
                     name="password"
-                    placeholder="********** "
+                    placeholder="**********"
                   />
                   <span>
                     <p>show</p>
@@ -108,7 +107,7 @@ const signup = () => {
                 <div className="d-grid mt-4">
                   <Button
                     size="lg"
-                    className="bt1 "
+                    className="bt1"
                     style={{ background: "#24243E" }}
                   >
                     Become a Member
@@ -117,7 +116,6 @@ const signup = () => {
                 </div>
               </div>
             </div>
-
             <div style={{ marginTop: "130px" }}>
               <div className="d-flex justify-content-between">
                 <p>Copyright 2021 - 2022 FoxHub All rights Reserved</p>
@@ -133,4 +131,5 @@ const signup = () => {
     </>
   );
 };
-export default signup;
+
+export default Signup;
