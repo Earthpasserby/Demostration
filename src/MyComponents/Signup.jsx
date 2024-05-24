@@ -11,7 +11,8 @@ import { TiInfoLarge } from "react-icons/ti";
 
 const Signup = () => {
   const gradientStyle = {
-    background: "linear-gradient(to top,#11111a, #24243e)",
+    background:
+      "linear-gradient(180deg, #59599B 0%, #24243E 59.38%, #0F0C29 100%)",
   };
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -36,23 +37,27 @@ const Signup = () => {
             </div>
             <div className="text d-flex align-items-center justify-content-center">
               <div>
-                <h1 style={{ color: "#ffffff" }}>
-                  Partnership for Business Growth
-                </h1>
-                <p style={{ color: "#ffffff" }}>
-                  Partnerships are pivotal for business growth, enabling
-                  companies to leverage mutual strengths, share risks, and
-                  capitalize on opportunities.
-                </p>
+                <div>
+                  <h1 style={{ color: "#ffffff" }}>
+                    Partnership for Business Growth
+                  </h1>
+                </div>
+                <div className="State-ment">
+                  <p style={{ color: "#ffffff" }}>
+                    Partnerships are pivotal for business growth, enabling
+                    companies to leverage mutual strengths, share risks, and
+                    capitalize on opportunities.
+                  </p>
+                </div>
               </div>
             </div>
           </Col>
           <Col md={8}>
-            <div className="d-flex justify-content-between Return-home mt-3">
+            <div className="d-flex justify-content-between Return-home">
               <Link to="/" style={{ textDecoration: "none" }}>
-                <div className="MainButton  topleft">
+                <div className="topleft">
                   <Button type="btn" variant="Secondary">
-                    <TfiAngleLeft style={{ fontSize: "25px" }} />
+                    <TfiAngleLeft style={{ fontSize: "20px" }} />
                     <span className="spanButton">Return Home</span>
                   </Button>
                 </div>
@@ -64,11 +69,13 @@ const Signup = () => {
                 </span>
               </p>
             </div>
-            <div className="d-flex align-items-center justify-content-center">
+            <div className="d-flex align-items-center justify-content-center mt-5">
               <div>
                 <div>
                   <h2 className="H-Text">BECOME AN EXCLUSIVE MEMBER</h2>
-                  <p>SIGN UP AND JOIN THE PARTNERSHIP</p>
+                  <p className="text-center P-text">
+                    SIGN UP AND JOIN THE PARTNERSHIP
+                  </p>
                 </div>
                 <div className="input-container">
                   <IoPersonOutline className="input-icon" />
@@ -117,14 +124,14 @@ const Signup = () => {
                 </div>
               </div>
             </div>
-            <div style={{ marginTop: "120px" }}>
+            <div style={{ marginTop: "170px" }}>
               <div className=" d-flex justify-content-between">
                 <div className="copy-lite">
                   <span>Copyright 2021 - 2022 FoxHub All rights Reserved</span>
                 </div>
-                <div className="Help" >
+                <div className="Help">
                   <TiInfoLarge />
-                  <span >Need help?</span>
+                  <span>Need help?</span>
                 </div>
               </div>
             </div>
