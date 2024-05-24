@@ -129,3 +129,51 @@ span p {
   background: #24243e;
   border-radius: 0 !important;
 }
+@media screen and (max-width: 768px) {
+  body {
+    overflow: scroll;
+  }
+  .Return-home {
+    margin-left: -25px !important;
+    margin-top: 25px;
+  }
+  .spanButton {
+    font-size: 12.8px !important;
+    color: #424242 !important;
+  }
+  .p-2 {
+    width: 200px !important;
+    font-size: 12px !important;
+  }
+  .H-text {
+    text-align: center;
+  }
+  .H-text h2 {
+    font-size: 22px !important;
+    margin-top: -30px !important;
+  }
+
+  .input-field {
+    width: 350px !important;
+    text-align: left !important;
+  }
+  .input-container {
+    text-align: center !important;
+  }
+
+  .input-icon {
+    left: 45px !important;
+  }
+  .bt1 {
+    width: 350px !important;
+    border-radius: 0 !important;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: 35px !important;
+  }
+
+  .icon {
+  margin-left: 120px !important;
+}
+}

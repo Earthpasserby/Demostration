@@ -48,7 +48,7 @@ const Signup = () => {
             </div>
           </Col>
           <Col md={8}>
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between Return-home">
               <Link to="/" style={{ textDecoration: "none" }}>
                 <div className="MainButton  topleft">
                   <Button type="btn" variant="Secondary">
@@ -67,9 +67,9 @@ const Signup = () => {
                 <Link style={{ color: "black" }}> LOG IN NOW</Link>
               </p>
             </div>
-            <div className="mt-5 d-flex align-items-center justify-content-center">
+            <div className="mt-5 d-flex align-items-center justify-content-center H-text">
               <div>
-                <h2>BECOME AN EXCLUSIVE MEMBER</h2>
+                <h2 className="H-Text">BECOME AN EXCLUSIVE MEMBER</h2>
                 <p className="mx-5">SIGN UP and join the partnership</p>
               </div>
             </div>
