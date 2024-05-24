@@ -19,7 +19,6 @@ h1 {
   width: 380px;
   height: 88px;
   gap: 0px;
-  opacity: 0px;
 }
 
 p {
@@ -45,8 +44,6 @@ span {
   height: 23px;
   top: 36px;
   left: 519px;
-  gap: 0px;
-  opacity: 0px;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 12.8px;
   font-weight: 400;
@@ -67,7 +64,6 @@ span {
   height: 72px;
   gap: 0px;
   border: 1px 0px 0px 0px;
-  opacity: 0px;
 }
 
 .input-field {
@@ -78,7 +74,6 @@ span {
   width: 420px;
   height: 72px;
   gap: 0px;
-  opacity: 0px;
   background: #ffffff;
   color: #424242;
   font-family: "Zen Kaku Gothic Antique";
@@ -116,7 +111,6 @@ span p {
   height: 72px;
   top: 270px;
   gap: 0px;
-  opacity: 0px;
   background: #24243e;
   border-radius: 0 !important;
 }
