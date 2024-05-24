@@ -19,14 +19,14 @@ const Signup = () => {
             md={4}
             style={{
               backgroundColor: "#24243E",
-              height: "900px",
+              height: "800px",
               width: "470.89px",
             }}
           >
             <div className="first-Img">
               <Image src="/./star.png" />
             </div>
-            <div className="mx-0 sec-Img">
+            <div>
               <Image
                 src="/./hand.png"
                 className="img-fluid moved-image"
@@ -49,8 +49,8 @@ const Signup = () => {
           <Col md={8}>
             <div className="d-flex justify-content-between">
               <Link to="/" style={{ textDecoration: "none" }}>
-                <div className="MainButton topleft">
-                  <Button type="btn" variant="secondary">
+                <div className="MainButton  topleft">
+                  <Button type="btn" variant="Secondary">
                     <span className="mx-2 spanButton">
                       <FaAngleLeft
                         className="mx-2"
