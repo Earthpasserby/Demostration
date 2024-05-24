@@ -217,7 +217,7 @@ span p {
     overflow: scroll;
   }
   .Return-home {
-    margin-left: -25px !important;
+    margin-left: -2px !important;
     margin-top: 25px;
   }
   .spanButton {
@@ -231,7 +231,7 @@ span p {
   .H-text {
     text-align: center;
   }
-  .H-text h2 {
+  .H-Text  {
     font-size: 22px !important;
     margin-top: -30px !important;
   }
@@ -245,7 +245,7 @@ span p {
   }
 
   .input-icon {
-    left: 45px !important;
+    left: 35px !important;
   }
   .bt1 {
     width: 350px !important;
@@ -253,10 +253,13 @@ span p {
     display: flex;
     justify-content: center !important;
     align-items: center !important;
-    margin-left: 35px !important;
+    margin-left: 25px !important;
   }
 
   .icon {
-    margin-left: 120px !important;
+    margin-left: 100px !important;
   }
+  .show-Visibility {
+  margin-left: -30px !important;
+}
 }
